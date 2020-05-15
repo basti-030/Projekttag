@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 100%;
+  color: #000000;
+  margin: 0;
+}
+
+p {font-family: PingFang SC;}
+
+a {
+  text-decoration: none;
+  color: black;
+  border-bottom: white;
+}
+
+header {
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navlinks {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 0;
+  margin: 0;
+}
+
+#impressum {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+#fontcredit {
+  font-size: 6;
+}
+
+@media (min-width: 960px) {
+  #button {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+  }
+
+  #navlinks {
+    display: flex;
+  }
+
+  .pictures {
+    padding-left: 1.55rem;
+    padding-right: 1.5rem;
+  }
+
+  #navlinks li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  h1 {
+    align-items: center;
+    text-transform: capitalize;
+    text-decoration: underline black;
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  #reviews {
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  header {
+    align-items: end;
+  }
+
+  #text {
+    text-align: center;
+  }
+}
