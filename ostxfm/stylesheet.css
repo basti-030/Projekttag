@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "PingFang SC";
+  src: url(https://github.com/basti-030/Projekttag/blob/master/ostxfm/fonts/PingFang%20SC%20Regular.eot);
+  src: url(https://github.com/basti-030/Projekttag/blob/master/ostxfm/fonts/PingFang%20SC%20Regular.woff)
+    format("woff");
+  src: url(https://github.com/basti-030/Projekttag/blob/master/ostxfm/fonts/PingFang%20SC%20Regular.otf)
+    format("opentype");
+  src: url(https://github.com/basti-030/Projekttag/blob/master/ostxfm/fonts/PingFang%20SC%20Regular.svg)
+    format("svg");
+}
+.pictures {justify-content: stretch;
+align-items: center;}
+
 html body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
@@ -10,7 +23,16 @@ html body {
   margin: 0;
 }
 
-p {font-family: PingFang SC;}
+p {
+  font-family: "PingFang SC";
+  font-weight: normal;
+  font-size: normal;
+}
+
+h1 {
+  font-family: "PingFang SC";
+  justify-content: center;
+}
 
 a {
   text-decoration: none;
@@ -19,16 +41,17 @@ a {
 }
 
 header {
-  height: 300px;
-  justify-content: space-between;
+  height: 151px;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+  /* background-color: black; */
   align-items: center;
+  display: flex;
 }
 
 #navlinks {
   font-weight: bold;
   text-transform: uppercase;
-  padding-left: 0;
-  margin: 0;
 }
 
 #impressum {
@@ -49,17 +72,9 @@ li {
     display: none;
   }
 
-  #navigation {
-    display: block;
-  }
-
   #navlinks {
     display: flex;
-  }
-
-  .pictures {
-    padding-left: 1.55rem;
-    padding-right: 1.5rem;
+    justify-content: flex-end;
   }
 
   #navlinks li {
@@ -68,23 +83,9 @@ li {
   }
 
   h1 {
-    align-items: center;
     text-transform: capitalize;
     text-decoration: underline black;
-    justify-content: center;
-    align-content: stretch;
   }
-
-  #reviews {
-    justify-content: center;
-    align-content: stretch;
-  }
-
-  header {
-    align-items: end;
-  }
-
-  #text {
-    text-align: center;
-  }
+  .pictures {justify-content: stretch;
+    align-items: center;}
 }
