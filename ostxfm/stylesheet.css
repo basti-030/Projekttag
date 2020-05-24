@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+#navigation {
+  display: none;
+}
+
+html,
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.4;
+  font-size: 100%;
+  color: black;
+  margin: 0;
+}
+
+section {background-color: black;}
+
+li {
+  list-style: none;
+}
+
+#logo {
+  width: 64px;
+  border: none;
+}
+
+#button {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#navlinks {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#home {
+  background-image: url(img/hintergrundbild.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: xx-large;
+  margin: none;
+}
+
+#home p {
+  color: white;
+  margin: none;
+  padding-bottom: 1rem;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 1rem;
+  transition: all 0.4s linear;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+#aboutus {
+  background-color: black;
+}
+
+.cardtext {
+  color: white;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: underline white;
+}
+h3 a,
+p a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background-color: black;
+  text-align: center;
+}
+aside .button {background-color: black;
+color: white;}
+
+aside .button:hover {background-color: white;
+color: black;}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+aside p {text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {background-color: black;}
+
+
+#legal a {color: white;}
+
+@media (min-width: 960px) {
+  #button {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+  }
+
+  #navlinks {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #navlinks li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .row {
+    display: flex;
+  }
+}
